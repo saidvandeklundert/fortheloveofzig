@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: For the love of Zig
 description: Zig by example
+
+exclude: ["template/", ".vscode/", "README.md"]
