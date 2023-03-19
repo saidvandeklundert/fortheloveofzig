@@ -1,3 +1,6 @@
 theme: jekyll-theme-minimal
 title: For the love of Zig
 description: Zig by example
+
+- alist
+- nowwhat
