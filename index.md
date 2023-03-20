@@ -8,6 +8,7 @@ permalink: /
 
 Learning Zig through someone else's mistakes
 
+### Examples:
 
-[hello world](hello-world.md)
-[variables](variables.md)
+- [hello world](hello-world.md)
+- [variables](variables.md)
