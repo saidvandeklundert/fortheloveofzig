@@ -30,7 +30,9 @@ pub fn main() void {
 }
 ```
 
-Notice how the type of the last variable was inferred. Running the program gives the following output:
+Notice how the type of the last variable was inferred. 
+
+Running the program gives the following output:
 
 ```
 $ zig run .\variables.zig
