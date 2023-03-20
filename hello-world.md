@@ -60,4 +60,4 @@ zig c++ .\hello_world.cpp -o hello_world_cpp.exe
 ```
 
 
-[variables](variables.md)
+[index](index.md)
