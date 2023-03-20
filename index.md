@@ -7,3 +7,6 @@ permalink: /
 ---
 
 Learning Zig through someone else's mistakes
+
+
+[hello world](hello-world.md)
