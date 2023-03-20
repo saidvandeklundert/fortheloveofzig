@@ -30,7 +30,6 @@ Instead of logging, you can also leverage the print statement.
 
 
 ```zig
-// zig run .\debugging.zig
 const std = @import("std");
 const print = std.debug.print;
 
@@ -56,7 +55,6 @@ zig run .\debugging.zig
 We can also print information about structs:
 
 ```zig
-// zig run .\debugging.zig
 const std = @import("std");
 const print = std.debug.print;
 
