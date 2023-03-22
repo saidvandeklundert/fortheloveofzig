@@ -16,7 +16,7 @@
     <script>
       var existingDivTag = document.getElementById("links");
       var anchorDynTag = document.createElement("a");
-      anchorDynTag.setAttribute("href","https://saidvandeklundert.net/fortheloveofzig/");
+      anchorDynTag.setAttribute("href","https://saidvandeklundert.net/fortheloveofzig/arrays");
       anchorDynTag.setAttribute("target","_blank");
       anchorDynTag.textContent = "Click here...";
       existingDivTag.appendChild(anchorDynTag);
@@ -30,7 +30,10 @@
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+        
+        <!-- content -->
         <div id="links">Content</div>
+        
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">This Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
