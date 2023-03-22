@@ -14,12 +14,12 @@
   </head>
   <body>
     <script>
-      let divContainer = document.getElementById("links");
-      aTag = document.createElement('a');
-      aTag.innerHTML = 'hello world';
-      aTag.setAttribute('title', 'fortheloveofzig');
-      aTag.setAttribute('href', 'https://saidvandeklundert.net/fortheloveofzig/hello-world');
-      divContainer.appendChild(aTag);
+      var existingDivTag = document.getElementById("existingDiv");
+      var anchorDynTag = document.createElement("a");
+      anchorDynTag.setAttribute("href","https://saidvandeklundert.net/fortheloveofzig/");
+      anchorDynTag.setAttribute("target","_blank");
+      anchorDynTag.textContent = "Click here...";
+      existingDivTag.appendChild(anchorDynTag);
     </script>
     <div class="wrapper">
       <header>
