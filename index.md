@@ -8,9 +8,8 @@ permalink: /
 
 Learning Zig through someone else's mistakes
 
-### Examples:
+<div align="center">
+        <p id="indextag"></p>
+        <script src="{{ "/assets/js/article.js" | relative_url }}"></script>
 
-- [hello world](hello-world.md)
-- [variables](variables.md)
-- [debugging](debugging.md)
-- [arrays](arrays.md)
+</div>
