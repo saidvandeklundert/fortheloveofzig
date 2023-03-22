@@ -13,6 +13,14 @@
     {% include head-custom.html %}
   </head>
   <body>
+    <script>
+      var a = document.createElement('a');
+      var linkText = document.createTextNode("my title text");
+      a.appendChild(linkText);
+      a.title = "my title text";
+      a.href = "http://example.com";
+      document.body.appendChild(a);
+    </script>    
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
