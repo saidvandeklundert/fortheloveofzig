@@ -28,10 +28,18 @@
         <div id="links">Content</div>
         <p id="indextag"></p>
         <script>
-          let text = "hello world";
           
-          result = "<a href='https://saidvandeklundert.net/fortheloveofzig/hello-world'>" + text + "</a>";
-          document.getElementById("indextag").innerHTML = result;
+          const articles = ["hello-world", "arrays",];
+          let aLen = articles.length;
+
+          let text = "<ul>";
+          for (let i = 0; i < aLen; i++) {
+            text += "<li>" + "<a href='https://saidvandeklundert.net/fortheloveofzig/"+ articles[i] + "'>"+  articles[i] + "</li>";
+            
+          }
+          text += "</ul>";
+
+          document.getElementById("indextag").innerHTML = text;
           </script>
 
         
