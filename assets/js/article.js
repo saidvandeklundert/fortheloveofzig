@@ -3,6 +3,7 @@ const articles = [
     "variables",
     "debugging",
     "arrays",
+    "if",
     "more learning resources",
   ];         
   let aLen = articles.length;
