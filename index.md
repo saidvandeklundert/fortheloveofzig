@@ -8,8 +8,3 @@ permalink: /
 
 Learning Zig through someone else's mistakes
 
-<div align="center">
-        <p id="indextag"></p>
-        <script src="{{ "/assets/js/article.js" | relative_url }}"></script>
-
-</div>
