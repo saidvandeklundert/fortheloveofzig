@@ -1,8 +1,8 @@
 ---
 layout: default
-title: test
+title: testing
 nav_order: 6
-permalink: /test
+permalink: /testing
 ---
 
 An example of a few different ways to unit test a function would be the following:

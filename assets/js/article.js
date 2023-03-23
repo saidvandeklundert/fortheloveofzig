@@ -4,7 +4,7 @@ const articles = [
     "debugging",
     "arrays",
     "if",
-    "test",
+    "testing",
     "more learning resources",
   ];         
   let aLen = articles.length;
