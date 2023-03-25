@@ -6,7 +6,7 @@ permalink: /slices
 ---
 
 
-Like an array, the slice is a contiguous sequence of elements. However, they are not the same. The slice is a view into a number of elements of an array. The slice itself consists of a pointer and a lenght. The pointer is pointing to one of the elements in an array. The lenght indicates the number of elements in the slice.
+Like an array, the slice is a contiguous sequence of elements. However, they are not the same. The slice is a view into a number of elements of an array. The slice itself consists of a pointer and a length. The pointer is pointing to one of the elements in an array. The length indicates the number of elements in the slice.
 
 The slice pointer does not need to point to the first element of the array. 
 
@@ -17,11 +17,11 @@ backing array [ ] [ ] [x] [x] [x] [ ]
                        ^
                        |
 slice pointer ----------
-slice lenght: 3    
+slice length: 3    
 ```
 
 
-The previous shows the backing array with 6 elements. The slice pointer points to the third element in the array. Since the lenght of the slice is 3, the slice will contain the third, fourth and fifth elements of the array.
+The previous shows the backing array with 6 elements. The slice pointer points to the third element in the array. Since the length of the slice is 3, the slice will contain the third, fourth and fifth elements of the array.
 
 Slices can grow and shrink in size. The room the slice has to grow is determined by the backing array. In Zig, slices have array bounds checking. When the slice attempts to grow beyond the bounds of the backing array, the program will panic:
 ```
@@ -29,7 +29,7 @@ backing array [ ] [ ] [x] [x] [x] [x] `x` <---`panic!!`
                        ^               
                        |
 slice pointer ----------
-slice lenght: 4 
+slice length: 4 
 ```
 
 To define the backing array and the slice that we laid out in the above examples, we can use the following code:
