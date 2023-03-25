@@ -130,3 +130,5 @@ pointer value: i32@17c0cd500ac dereferenced pointer value 3
 pointer key: []const u8@17c0cd50060 dereferenced pointer key two
 pointer value: i32@17c0cd500b0 dereferenced pointer value 2
 ```
+
+The entire source code is [here](https://github.com/saidvandeklundert/fortheloveofzig/blob/dev/src/string%20hashmap.zig).
