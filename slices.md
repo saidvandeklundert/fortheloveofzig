@@ -13,7 +13,8 @@ The slice pointer does not need to point to the first element of the array.
 In the context of a slice, I always imagine the slice being backed by a backing array where the bbacking array is the array that the slice is pointing to:
 
 ```
-backing array [ ] [ ] [x] [x] [x] [ ] 
+backing array [ ] [ ] [ ] [ ] [ ] [ ] 
+slice                 [ ] [ ] [ ] 
                        ^
                        |
 slice pointer ----------
@@ -25,7 +26,8 @@ The previous shows the backing array with 6 elements. The slice pointer points t
 
 Slices can grow and shrink in size. The room the slice has to grow is determined by the backing array. In Zig, slices have array bounds checking. When the slice attempts to grow beyond the bounds of the backing array, the program will panic:
 ```
-backing array [ ] [ ] [x] [x] [x] [x] `x` <---`panic!!`
+backing array [ ] [ ] [x] [x] [x] [x] 
+slice                 [ ] [ ] [ ] [ ] [ ] <--- panic!!                     
                        ^               
                        |
 slice pointer ----------
