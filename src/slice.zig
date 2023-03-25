@@ -18,7 +18,9 @@ pub fn main() !void {
     }
 
     var not_a_slice = backing_array[2..5];
-    print("is 'not_a_slice' a slice?: {}\n", .{(@TypeOf(not_a_slice) == []i32)});
+    print("is 'not_a_slice' a slice?: {}\n", .{
+        (@TypeOf(not_a_slice) == []i32),
+    });
     print("is a 'slice' a slice?: {}\n", .{(@TypeOf(slice) == []i32)});
     print("not_a_slice is a: {}\n", .{@TypeOf(not_a_slice)});
     const array_ptr = &backing_array;
