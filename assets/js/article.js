@@ -6,7 +6,7 @@ const articles = [
     "if",
     "testing",
     "string hashmap",
-    "slice",
+    "slices",
     "more learning resources",
   ];         
   let aLen = articles.length;
