@@ -10,13 +10,13 @@ Like an array, the slice is a contiguous sequence of elements. However, they are
 
 The slice pointer does not need to point to the first element of the array. 
 
-In the context of a slice, I always imagine the slice being backed by a backing array where the bbacking array is the array that the slice is pointing to:
+In the context of a slice, I always imagine the slice being backed by a backing array where the backing array is the array that the slice is pointing to:
 
 ```
 backing array [ ] [ ] [ ] [ ] [ ] [ ] 
-slice                 [ ] [ ] [ ] 
-                       ^
-                       |
+                       _   _   _
+                       ^ 
+                       | 
 slice pointer ----------
 slice length: 3    
 ```
@@ -26,12 +26,12 @@ The previous shows the backing array with 6 elements. The slice pointer points t
 
 Slices can grow and shrink in size. The room the slice has to grow is determined by the backing array. In Zig, slices have array bounds checking. When the slice attempts to grow beyond the bounds of the backing array, the program will panic:
 ```
-backing array [ ] [ ] [x] [x] [x] [x] 
-slice                 [ ] [ ] [ ] [ ] [ ] <--- panic!!                     
-                       ^               
-                       |
+backing array [ ] [ ] [x] [x] [x] [x]                                  
+                       _   _   _   _  _  <--- panic: index out of bounds
+                       ^ 
+                       | 
 slice pointer ----------
-slice length: 4 
+slice length: 5
 ```
 
 To define the backing array and the slice that we laid out in the above examples, we can use the following code:
