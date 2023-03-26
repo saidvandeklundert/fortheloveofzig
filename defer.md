@@ -59,7 +59,23 @@ deferred 1
 ```
 
 
-A defer statement is used for executing code just before transferring program control outside of the scope that the defer statement appears in. 
-defer will execute an expression at the end of the current scope.
+A common pattern in Zig is using defer to ensure memory is freed. Here is an example function that allocates 100 bytes and then ensures the memory is freed using defer:
+
+```zig
+fn allocate_and_free_memory() !void {
+    const allocator = std.heap.page_allocator;
+
+    const hundred_bytes = try allocator.alloc(u8, 100);
+    defer allocator.free(hundred_bytes);
+    print("Use the hundred_bytes while relying on defer to clean up.\n", .{});
+}
+```
+
+This outputs:
+
+```
+Use the hundred_bytes while relying on defer to clean up.
+```
+
 
 Full code is [here](https://github.com/saidvandeklundert/fortheloveofzig/blob/dev/src/defer.zig).
