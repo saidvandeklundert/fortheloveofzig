@@ -80,7 +80,7 @@ marie is of the type structs.Person
 ```
 
 
-Structs can also be passed to functions as arguments. When we define a functions that takes the struct type, we are able to access the struct fields. However, we will not be able to mutate any of the fields. If we want to pass a struct to a function and mutate any of the fields, we need to declare the function to take a pointer to the struct type:
+Structs can also be passed to functions as arguments. When we define a function that takes the struct type, we are able to access the struct fields. However, we will not be able to mutate any of the fields. If we want to pass a struct to a function and mutate any of the fields, we need to declare the function to take a pointer to the struct type:
 
 ```zig
 fn setAge(person: *Person, age: u8) void {
