@@ -32,11 +32,10 @@ pub fn main() void {
     jan.age = 17;
     print("jan.age after the change: {d}\n", .{jan.age});
     var marie = newPerson("Marie", 4);
-    print("marie.name: {s}\nmarie.age: {d}\n", .{ marie.name, marie.age });
+    print("marie.age: {d}\n", .{marie.age});
     setAge(&marie, 5);
-    print("marie.name: {s}\nmarie.age: {d}\n", .{ marie.name, marie.age });
+    print("marie.age after setAge: {d}\n", .{marie.age});
 
-    print("marie.name after another: {s}\nmarie.age: {d}\n", .{ marie.name, marie.age });
     var anne = newPerson("Anne", 38);
     print("anne.name: {s}\nanne.age: {d}\n", .{ anne.name, anne.age });
 
