@@ -9,6 +9,7 @@ const articles = [
     "slices",
     "optionals",
     "defer",
+    "structs",
     "more learning resources",
   ];         
   let aLen = articles.length;
