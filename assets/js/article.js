@@ -4,6 +4,7 @@ const articles = [
     "debugging",
     "arrays",
     "if",
+    "for",
     "testing",
     "string hashmap",
     "slices",
