@@ -11,6 +11,8 @@ const articles = [
     "optionals",
     "defer",
     "structs",
+    "naming conventions",
+    "source files are structures",
     "more learning resources",
   ];         
   let aLen = articles.length;
