@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "rootDir": "src",
-    "outDir": "js",
+    "outDir": "js"
   }
 }

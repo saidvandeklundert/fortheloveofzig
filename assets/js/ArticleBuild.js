@@ -1,7 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.renderArticleIndex = exports.Articles = void 0;
 // Generate the string that is used in the web page.
 // tsc
 // node .\dist\Display.js
-export const Articles = [
+exports.Articles = [
     "hello-world",
     "variables",
     "debugging",
@@ -19,7 +22,7 @@ export const Articles = [
     "source files are structures",
     "more learning resources",
 ];
-export function renderArticleIndex(articles) {
+function renderArticleIndex(articles) {
     const articleLength = articles.length;
     var text = "<ul>";
     for (let i = 0; i < articleLength; i++) {
@@ -28,4 +31,5 @@ export function renderArticleIndex(articles) {
     text += "</ul>";
     return text;
 }
+exports.renderArticleIndex = renderArticleIndex;
 //# sourceMappingURL=ArticleBuild.js.map
