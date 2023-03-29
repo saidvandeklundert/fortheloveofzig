@@ -1,12 +1,10 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "lib": ["es5", "es6", "dom"],
-      "allowJs": true,
-      "sourceMap": true,
-      "rootDir": "src",
-      "outDir": "dist",
-      "moduleResolution": "node",      
-    }
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
   }
+}
