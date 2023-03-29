@@ -1,6 +1,7 @@
 // Render what is ultimately used in the web page.
-// import { Articles, renderArticleIndex } from "./ArticleBuild";
-const Articles:Array<string> = [
+import { Articles, renderArticleIndex } from "./ArticleBuild";
+/*
+const Articles: Array<string> = [
     "hello-world",
     "variables",
     "debugging",
@@ -35,6 +36,6 @@ function renderArticleIndex(articles: Array<string>): string{
     return text;
     
 }
-
+*/
 const text = renderArticleIndex(Articles);
 document.getElementById("indextag").innerHTML = text;
