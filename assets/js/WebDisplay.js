@@ -1,6 +1,6 @@
 // Render what is ultimately used in the web page.
 // import { Articles, renderArticleIndex } from "./ArticleBuild";
-export const Articles = [
+const Articles = [
     "hello-world",
     "variables",
     "debugging",
@@ -18,7 +18,7 @@ export const Articles = [
     "source files are structures",
     "more learning resources",
 ];
-export function renderArticleIndex(articles) {
+function renderArticleIndex(articles) {
     const articleLength = articles.length;
     var text = "<ul>";
     for (let i = 0; i < articleLength; i++) {

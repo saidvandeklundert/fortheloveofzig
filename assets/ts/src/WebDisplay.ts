@@ -1,6 +1,6 @@
 // Render what is ultimately used in the web page.
 // import { Articles, renderArticleIndex } from "./ArticleBuild";
-export const Articles:Array<string> = [
+const Articles:Array<string> = [
     "hello-world",
     "variables",
     "debugging",
@@ -22,7 +22,7 @@ export const Articles:Array<string> = [
 
 
 
-export function renderArticleIndex(articles: Array<string>): string{
+function renderArticleIndex(articles: Array<string>): string{
     const articleLength = articles.length;
 
     var text:string = "<ul>";
