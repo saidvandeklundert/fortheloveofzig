@@ -1,6 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Render what is ultimately used in the web page.
-//import { Articles, renderArticleIndex } from "./ArticleBuild";
-const Articles = [
+const ArticleBuild_1 = require("./ArticleBuild");
+/*
+const Articles: Array<string> = [
     "hello-world",
     "variables",
     "debugging",
@@ -17,16 +20,25 @@ const Articles = [
     "naming conventions",
     "source files are structures",
     "more learning resources",
-];
-function renderArticleIndex(articles) {
+]
+
+
+
+
+function renderArticleIndex(articles: Array<string>): string{
     const articleLength = articles.length;
-    var text = "<ul>";
+
+    var text:string = "<ul>";
+    
     for (let i = 0; i < articleLength; i++) {
-        text += "<li>" + "<a href='https://saidvandeklundert.net/fortheloveofzig/" + articles[i] + "'>" + articles[i] + "</li>";
+        text += "<li>" + "<a href='https://saidvandeklundert.net/fortheloveofzig/"+ articles[i] + "'>"+  articles[i] + "</li>";
     }
+    
     text += "</ul>";
     return text;
+    
 }
-const text = renderArticleIndex(Articles);
+*/
+const text = (0, ArticleBuild_1.renderArticleIndex)(ArticleBuild_1.Articles);
 document.getElementById("indextag").innerHTML = text;
 //# sourceMappingURL=WebDisplay.js.map
