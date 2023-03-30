@@ -16,6 +16,7 @@ const Articles = [
     "structs",
     "naming conventions",
     "source files are structures",
+    "errors",
     "more learning resources",
 ];
 function renderArticleIndex(articles) {
