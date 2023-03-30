@@ -6,5 +6,5 @@ description: Zig by example
 permalink: /
 ---
 
-Learning Zig through someone else's mistakes
+Learning Zig by example.
 
