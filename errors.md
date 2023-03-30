@@ -14,7 +14,7 @@ Defining an error is done with the error keyword:
 error.NotEven
 ```
 
-A type can be prefixed with the `!` operator to indicat that it is an error union. An error union is a type that can be either the type that is specified or any error.
+A type can be prefixed with the `!` operator to indicate that it is an error union. An error union is a type that can be either the type that is specified or any error.
 
 In Zig, it is very common to see functions that return error unions. Here is an example function that returns either a `u8` or an error:
 
@@ -65,7 +65,7 @@ result = useCatch(3);
 print("Result useCatch(3):\n{any}\n", .{result});
 ```
 
-When `isEven` is called in this function, and when it produces an error, the `catch` statement wil capture an error value inside the `err` variable. If there is an error value, the function will return that error.
+When `isEven` is called in this function, and when it produces an error, the `catch` statement will capture an error value inside the `err` variable. If there is an error value, the function will return that error.
 
 If `isEven` executes without any error, the function will continue to run. The previous example returns the following:
 
@@ -86,7 +86,7 @@ u8_result = isEven(3) catch 0;
 print("isEven(3) catch 0;\n{any}\n", .{u8_result});
 ```
 
-Notice that we can now capture the result of the functin in a value of type `u8`. We can do this is because the compiler understands that the expression will always result in a `u8`, even when `isEven` returns an error. Basically, this allows you to specify a default value for this function while handling the possible error the function may return.
+Notice that we can now capture the result of the function in a value of type `u8`. We can do this is because the compiler understands that the expression will always result in a `u8`, even when `isEven` returns an error. Basically, this allows you to specify a default value for this function while handling the possible error the function may return.
 
 The previous code produces the following result:
 
@@ -137,7 +137,7 @@ result = useTry(3);
 print("Result useTry(3):\n{any}\n", .{result});
 ```
 
-The `isEven` function will now produce an error, causing the the function to stop and return immediately. When we run it, we see the following:
+The `isEven` function will now produce an error, causing the function to stop and return immediately. When we run it, we see the following:
 
 ```
 Result useTry(3):
@@ -145,3 +145,6 @@ error.NotEven
 ```
 
 We notice that the print statement from the function body was not executed. Instead, it immediately returned the error value `error.NotEven` that was returned by the `isEven` function.
+
+
+The source code for the examples can be found [here](https://github.com/saidvandeklundert/fortheloveofzig/blob/dev/src/errors.zig).
