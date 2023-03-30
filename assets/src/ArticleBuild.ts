@@ -17,6 +17,7 @@ export const Articles:Array<string> = [
     "structs",
     "naming conventions",
     "source files are structures",
+    "errors",
     "more learning resources",
 ]
 
