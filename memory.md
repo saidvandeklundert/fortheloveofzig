@@ -15,3 +15,15 @@ The answer is the heap. The programmer is responsible for allocating and freeing
 And how do we allocate memory on the heap? We ask the OS to give our program some memory.
 
 In Zig, we can use the existing and provided allocators or we can choose to write our own.
+
+
+## Alloctor
+
+- free / alloc: allocate memmory for slices
+- create / destroy: allocate memmory for single items
+
+## memory allocation strategies:
+
+- don't
+- let the OS do it
+
