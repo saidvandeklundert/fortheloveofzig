@@ -21,6 +21,7 @@ exports.Articles = [
     "naming conventions",
     "source files are structures",
     "errors",
+    "tagged unions"
     "more learning resources",
 ];
 function renderArticleIndex(articles) {
