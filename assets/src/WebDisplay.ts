@@ -1,4 +1,5 @@
 // Generate the string that is used in the web page.
+// cd C:\dev\fortheloveofzig\assets
 // tsc
 // node .\js\WebDisplay.js
 const Articles: Array<string> = [

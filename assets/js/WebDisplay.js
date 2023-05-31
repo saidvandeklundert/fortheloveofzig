@@ -1,6 +1,7 @@
 // Generate the string that is used in the web page.
+// cd C:\dev\fortheloveofzig\assets
 // tsc
-// node .\js\Display.js
+// node .\js\WebDisplay.js
 const Articles = [
     "hello-world",
     "variables",
