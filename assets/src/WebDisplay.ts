@@ -18,6 +18,7 @@ const Articles: Array<string> = [
     "naming conventions",
     "source files are structures",
     "errors",    
+    "tagged unions",    
     "more learning resources",
 ]
 
