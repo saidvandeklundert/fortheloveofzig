@@ -1,5 +1,6 @@
-// Render what is ultimately used in the web page.
-//import { Articles, renderArticleIndex } from "./ArticleBuild";
+// Generate the string that is used in the web page.
+// tsc
+// node .\js\Display.js
 const Articles = [
     "hello-world",
     "variables",
@@ -17,7 +18,7 @@ const Articles = [
     "naming conventions",
     "source files are structures",
     "errors",
-    "tagged unions",        
+    "tagged unions",
     "more learning resources",
 ];
 function renderArticleIndex(articles) {

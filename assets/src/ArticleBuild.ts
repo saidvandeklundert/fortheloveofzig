@@ -1,6 +1,3 @@
-// Generate the string that is used in the web page.
-// tsc
-// node .\js\Display.js
 export const Articles:Array<string> = [
     "hello-world",
     "variables",

@@ -1,6 +1,6 @@
-// Render what is ultimately used in the web page.
-//import { Articles, renderArticleIndex } from "./ArticleBuild";
-
+// Generate the string that is used in the web page.
+// tsc
+// node .\js\WebDisplay.js
 const Articles: Array<string> = [
     "hello-world",
     "variables",

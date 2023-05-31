@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.renderArticleIndex = exports.Articles = void 0;
-// Generate the string that is used in the web page.
-// tsc
-// node .\js\Display.js
 exports.Articles = [
     "hello-world",
     "variables",
