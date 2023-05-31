@@ -10,7 +10,7 @@ pub fn main() !void {
     var gpa: std.heap.GeneralPurposeAllocator(.{}) = .{};
 
     // free the memory on exit:
-    defer gpa.deinit();
+    defer _ = gpa.deinit();
 
     // initialize the allocator:
     const allocator = gpa.allocator();
